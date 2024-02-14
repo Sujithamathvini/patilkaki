@@ -1,0 +1,261 @@
+@media (min-width:200px){
+    .nav-container .logo{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .nav-container .menu-button{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .nav-container .nav .item {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .grow{
+        font-size: 22vw;
+    }
+    .loader-grow{
+        font-size: 22vw;
+    }
+    .top-contenth h3{
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .top-contenth button{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+
+    .about h3{
+        font-size: 5vw;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .loop h2{
+        font-size: 6vw;
+        font-weight: 600;
+    }
+
+    .service > h1{
+        font-size: 10vw;
+        font-weight: 700;
+    }
+    .service-contents .service-content h3{
+        font-weight: 500;
+        font-size: 6vw;
+    }
+
+    .countdown{
+        font-size: 6vw;
+        font-weight: 600;
+        height: 50vh;
+        /* padding: 10px 5%; */
+    }
+    #timer{
+        font-size: 10vw;
+        font-weight: 900;
+    }
+}
+@media (min-width:340px){
+    .nav-container .logo{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .nav-container .menu-button{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .loader-grow{
+        font-size: 18vw;
+    }
+
+    .about h3{
+        font-size: 4vw;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .countdown{
+        font-size: 6vw;
+        font-weight: 600;
+        height: 40vh;
+        /* padding: 10px 5%; */
+    }
+}
+
+@media (min-width:450px){
+    .countdown{
+        font-size: 4vw;
+        font-weight: 600;
+        height: 60vh;
+        /* padding: 10px 5%; */
+    }
+}
+
+@media (min-width:600px){
+    .nav-container .logo{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .nav-container .menu-button{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .nav-container .nav .item {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    .grow{
+        font-size: 13vw;
+    }
+    .loader-grow{
+        font-size: 13vw;
+    }
+    .top-contenth h3{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    .top-contenth button{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .loop h2{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .countdown{
+        font-size: 3.5vw;
+        font-weight: 600;
+        padding: 0px 5%;
+        padding-top: 50px;
+        height: 100vh;
+    }
+    #timer{
+        font-size: 4vw;
+        font-weight: 900;
+    }
+}
+
+@media (min-width:720px){
+    .grow{
+        font-size: 13vw;
+    }
+    .loader-grow{
+        font-size: 13vw;
+    }
+    .top-contenth h3{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    .top-contenth button{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .countdown{
+        padding-top: 100px;
+    }
+    .about h3{
+        font-size: 3vw;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+    .loop h2{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+}
+
+@media (min-width:950px){
+    .grow{
+        font-size: 13vw;
+    }
+    .loader-grow{
+        font-size: 13vw;
+    }
+    .top-contenth h3{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    .top-contenth button{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+    .countdown{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    #timer{
+        font-size: 4vw;
+        font-weight: 900;
+    }
+    .loop h2{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+}
+
+@media (min-width:1000px){
+    .nav-container .logo{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .nav-container .menu-button{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .nav-container .nav .item {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+
+    .grow{
+        font-size: 15vw;
+    }
+    .loader-grow{
+        font-size: 15vw;
+    }
+    .top-contenth h3{
+        font-size: 2vw;
+        font-weight: 700;
+    }
+    .top-contenth button{
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+
+
+    .about h3{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 100px;
+    }
+    .loop h2{
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    .service > h1{
+        font-size: 7vw;
+        font-weight: 700;
+    }
+    .service-contents .service-content h3{
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .countdown{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    #timer{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+}

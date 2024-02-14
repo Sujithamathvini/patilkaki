@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darsheel Salva - PatilKaki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav>
-        <a href="" class="logo">Darsheel Salva</a>
-        <ul>
-            <li class="item"><a href="">About</a></li>
-            <li class="item"><a href="">Services</a></li>
-            <li class="item"><a href="">Contacts</a></li>
-        </ul>
-    </nav>
-    <div class="main">
-        <div class="top">
-            <h1 class="top-h">GROW</h1>
+    <div class="loader">
+        <div class="loader-content">
+            <h1 class="loader-grow">GROW</h1>
+            <h3>Loading......</h3>
         </div>
-        <div class="middle">
-            <div class="content">
-                <h3>Grow your Stratups.</h3>
-                <h3>Gain various Insights.</h3>
-                <h3>Elevate your Brand.</h3>
-                <h3>Ignite your Business Growth.</h3>
+    </div>
+    <div class="nav-container">
+        <a href="#home" class="logo">Darsheel Salva</a>
+        <a class="menu-button" onclick="navreveal()">menu</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about" class="item" onclick="navreveal()">About</a></li>
+                <li><a href="#service" class="item" onclick="navreveal()">Services</a></li>
+                <li><a href="#contact" class="item" onclick="navreveal()">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="#home" class="main">
+        <div class="top-content">
+            <div class="top-contenth">
+                <h3 class="textStroke">Gain various Insights. Elevate your Brand.</h3>
+                <h1 class="grow">GROW</h1>
+                <h3 class="textStroke">Ignite your Business Growth.</h3>
                 <button>Register Now</button>
             </div>
         </div>
-        <div class="bottom"></div>
     </div>
 
-    <div class="about">
+    <div id="about" class="about">
         <div class="about-content">
             <h1 class="about-h">About</h1>
             <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, dolorem voluptates a magni itaque error accusamus provident laboriosam.
@@ -51,17 +56,25 @@
         </div>
     </div>
 
-    <div class="service">
+    <div id="service" class="service">
         <h1>Why Choose Us ?</h1>
         <div class="service-contents">
-            <h3>Service 1</h3>
-            <h3>Service 2</h3>
-            <h3>Service 3</h3>
-            <h3>Service 4</h3>
+            <div class="service-content">
+                <h3>Service 1</h3>
+            </div>
+            <div class="service-content">
+                <h3>Service 2</h3>
+            </div>
+            <div class="service-content">
+                <h3>Service 3</h3>
+            </div>
+            <div class="service-content">
+                <h3>Service 4</h3>
+            </div>
         </div>
     </div>
 
-    <div class="countdown">
+    <div id="contact" class="countdown">
         <h3>Before you miss it,</h3>
         <h3>Grab your spot !</h3>
         <div id="timer"></div>

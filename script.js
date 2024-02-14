@@ -1,5 +1,5 @@
 // hero section
-var tl = gsap.timeline({scrollTrigger:{
+var hs = gsap.timeline({scrollTrigger:{
     trigger:".main",
     // markers:true,
     start:"50% 50%",
@@ -7,37 +7,48 @@ var tl = gsap.timeline({scrollTrigger:{
     scrub:2,
     pin:true
 }});
-tl
-.to(".top",{
-    top: "-100%",
-},'a')
-.to(".bottom",{
-    bottom: "-100%",
-},'a')
-.to(".top-h",{
-    top: "80%"
-},'a')
-.to(".content",{
-    delay: -0.2,
-    paddingTop: "0%"
+hs
+.to(".grow",{
+    marginLeft: "60%",
 })
-.to(".bottom",{
-    delay: 0.5,
-    height: "0",
-},'b')
+
 
 // nav
-gsap.to("nav",{
-    backgroundColor:"#E5E7E8",
-    duration:0.5,
-    height:"70px",
-    scrollTrigger:{
-        trigger:"nav",
-        scroller:"body",
-        start:"top -10%",
-        end:"top -11%",
-        scrub:1
+function navreveal (){
+    var menuelement = document.querySelector(".nav");
+
+    menuelement.classList.toggle("show")
+}
+
+
+// loader
+function startLoader(){
+    let element = document.querySelector(".loader-grow");
+    let currentVal = 0;
+    const arr = ["passion","passion", "vision", "guide", "grow"];
+
+    function updateText(){
+        if(currentVal == 4){
+            return;
+        }
+
+        currentVal+=1;
+
+        if(currentVal>4){
+            currentVal=4
+        }
+        element.textContent = arr[currentVal]
+
+        let delay = 50*20;
+        setTimeout(updateText,delay)
     }
+    updateText();
+}
+startLoader();
+
+gsap.to(".loader, .loader-content", 0.25, {
+    delay: 3.5,
+    display: "none"
 })
 
 
@@ -83,7 +94,7 @@ window.addEventListener("load",function(){
 })
 
 function showPopup(){
-      const timeLimit = 5;
+      const timeLimit = 15;
       let i=0;
       const timer = setInterval(function(){
        i++;

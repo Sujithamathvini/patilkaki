@@ -2,6 +2,8 @@
     font-family: GeneralSans;
     src: url(/GeneralSans-Variable.ttf);
 }
+/* green : 444a22, ccfe38, bed0be,  */
+/* yellow : fffea7 */
 
 *{
     margin: 0;
@@ -12,44 +14,106 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color: #E5E7E8;
+    background-color: #293329;
 }
 
 /* style */
 
 li, a{
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 
-nav{
+
+.nav-container{
     position: fixed;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    display: inline-block;
     gap: 40px;
     padding: 30px 5%;
-    z-index: 99;
+    z-index: 100;
+    background-color: #293329;
 }
-nav ul{
+.nav-container a{
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    font-weight: 500;
+    color: #fffea7;
+    /* font-size: 1.2rem; */
 }
-nav ul li{
-    padding: 0 40px;
+.logo{
+    float: left;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.menu-button{
+    float: right;
+    cursor: pointer;
+}
+nav{
+    display: none;
+    float: right;
+    width: 100%;
+    height: 100vh;
+    padding-left: 20px;
+    /* z-index: 100; */
 }
 nav a{
     list-style: none;
-    font-weight: 500;
-    font-size: 1.2rem;
 }
-.logo{
-    font-weight: 700;
-    font-size: 1.7rem;
+nav.show{
+    display: block;
+}
+nav ul{
+    padding-top: 50px;
+}
+nav ul li{
+    color: #fffea7;
+}
+nav ul li a:hover{
+    margin-left: 50px;
+    transition: all 1sec ease-in;
+}
+
+.nav-container .logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.nav-container .menu-button{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.nav-container .nav .item {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #fffea7;
+}
+
+
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #293329;
+    z-index: 1000;
+}
+.loader-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+.loader-grow{
+    font-size: 18vw;
+    text-transform: uppercase;
+    color: #fffea7;
+}
+.loader .loader-content h3{
+    color: #fff;
+    font-size: 2vw;
+    letter-spacing: 10px;
 }
 
 .main{
@@ -58,67 +122,50 @@ nav a{
     height: 100vh;
 }
 
-.top{
+.top-content{
     position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 50vh;
-    background-color: #E5E7E8;
-    z-index: 9;
-    /* overflow: hidden; */
-}
-.middle{
-    position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    overflow: hidden;
+    background-color: #293329;
 }
-.bottom{
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 50vh;
-    background-color: #E5E7E8;
-    overflow: hidden;
-}
-
-.main h1{
+.top-contenth{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 18vw;
-    /* font-size: clamp(200px, 4vw, 224px); */
-}
-.top-h{
-    bottom: 50%;
-}
-.content{
-    padding-top: 40vh;
+    text-align: center;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: 600;
+}
+.grow{
+    font-size: 18vw;
+    color: #fffea7;
+    overflow: hidden;
+}
+.top-contenth h3{
+    font-size: 2.5vw;
+    font-weight: 700;
+    /* background-color: #505C45; */
     color: #fff;
 }
-.middle button{
-    background-color: #fff;
-    padding: 20px 30px;
-    color: #000;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-top: 30px;
-    font-size: 1rem;
+.top-contenth button{
+    font-size: 1.5rem;
     font-weight: 600;
+    padding: 10px 20px;
+    border: #fff 1px solid;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
 }
-.middle button:hover{
-    box-shadow: #fff 2px 2px 2px;
+.top-contenth button:hover{
+    background-color: #fffea7;
+    border: #000 1px solid;
+    box-shadow: #fff 6px 6px 1px;
+    color: #000;
 }
+
+
 
 .about{
     position: relative;
@@ -130,6 +177,7 @@ nav a{
     align-items: center;
     flex-direction: row;
     gap: 30px;
+    color: #fff;
 }
 
 .about-content > .about-h{
@@ -140,15 +188,16 @@ nav a{
 }
 .about h3{
     font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 100px;
 }
 
 .about-img{
     z-index: 10;
     width: 900px;
     height: 500px;
-    /* background-color: aquamarine; */
     border-radius: 10px;
-    border: 1px #000 solid;
+    border: 1px #fff solid;
 }
 
 .about-img img{
@@ -156,27 +205,25 @@ nav a{
     height: 100%;
     object-fit:cover;
     margin: auto 0;
-    /* background-color:aquamarine; */
 }
 
 .loop{
     position: absolute;
-    background-color: #505C45;
+    background-color: #fffea7;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 70%;
-    height: 7%;
+    height: 8%;
     width: 100%;
     z-index: 9;
     overflow: hidden;
-    /* z-index: 1; */
 }
 .loop h2{
-    font-family: Italiana;
     font-size: 3vw;
-    font-weight: 400;
-    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: black;
     white-space: nowrap;
     animation-name: infloop;
     animation-duration: 6s;
@@ -198,6 +245,7 @@ nav a{
     width: 100%;
     height: 100vh;
     padding: 150px 5%;
+    color: #fff;
 }
 
 .service > h1{
@@ -210,11 +258,12 @@ nav a{
     padding: 50px 0;
 }
 
-.service-contents > h3{
+.service-contents .service-content h3{
     font-weight: 500;
     font-size: 30px;
     padding: 30px 0;
-    border-bottom: #000 1px solid;
+    border-bottom: #fff 1px solid;
+    cursor: pointer;
 }
 
 .countdown{
@@ -227,33 +276,35 @@ nav a{
     align-items: center;
     font-size: 3rem;
     font-weight: 600;
+    color: #fff;
 }
 
 #timer{
     font-size: 3rem;
     font-weight: 600;
     margin-top: 30px;
+    color: #fffea7;
 }
 .countdown a{
     font-size: 1.5rem;
     font-weight: 600;
     padding: 10px 20px;
-    border: #000 1px solid;
-    background-color: #1a1a1a;
+    border: #fff 1px solid;
     color: #fff;
     cursor: pointer;
     margin-top: 20px;
     border-radius: 10px;
 }
 .countdown a:hover{
-    background-color: #505C45;
-    box-shadow: #000 3px 3px 3px;
+    background-color: #fffea7;
+    border: #000 1px solid;
+    box-shadow: #fff 6px 6px 1px;
+    color: #000;
 }
 
 
 .popupForm {
   width: 350px;
-  /* height: 0px; */
   padding: 30px 20px;
   font-size: 25px;
   background: #eee;
@@ -261,7 +312,7 @@ nav a{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 3px 3px 3px #000;
+  box-shadow: 6px 6px 1px #636161;
   border-radius: 5px;
   text-align: center;
   z-index: 300;
