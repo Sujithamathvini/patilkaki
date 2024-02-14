@@ -18,6 +18,16 @@ html,body{
 }
 
 /* style */
+#cursor{
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: #fffea7;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 1000;
+}
 
 li, a{
     text-decoration: none;

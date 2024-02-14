@@ -12,6 +12,17 @@ hs
     marginLeft: "60%",
 })
 
+// cursor
+var crsr = document.querySelector("#cursor")
+
+// move cursor
+document.addEventListener("mousemove",(dets)=>{
+    gsap.to("#cursor",{
+        left:dets.x,
+        top:dets.y
+    });
+})
+
 
 // nav
 function navreveal (){
